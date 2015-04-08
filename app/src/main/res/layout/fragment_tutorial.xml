@@ -1,0 +1,27 @@
+ <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tab_bg_normal"
+        android:orientation="vertical">
+
+
+     <com.viewpagerindicator.CirclePageIndicator
+         android:id="@+id/indicator"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="@dimen/padding10"
+         app:fillColor="@color/tab_bg_selected"
+         app:strokeColor="@color/tab_bg_selected"
+         app:pageColor="@color/tab_bg_normal"
+         app:strokeWidth="1dp" />
+
+        <android.support.v4.view.ViewPager
+            android:layout_marginBottom="@dimen/padding10"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+ </LinearLayout>
